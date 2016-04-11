@@ -1,0 +1,94 @@
+package com.abhishek.test1;
+
+import java.sql.Time;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+
+import com.google.appengine.api.datastore.Entity;
+
+public class Users {
+	static long PRIMARY_KEY = 1;
+	int user_id; // primary key
+	String email;
+	String login;
+	String passwd;
+	String first_name;
+	String last_name;
+	String middle_name;
+	char gender;
+	Time upd_ts;
+	String photo_path;
+	boolean is_external;
+	Time last_login;
+	short failed_logins;
+	boolean verified;
+
+	/*
+	 * @param m : set of all properties of the user, (all the columns in
+	 * the MySQL script).
+	 */
+	Entity create_user_entity(Map<String, String> m) {
+		Entity new_user = new Entity("User", ("" + PRIMARY_KEY));
+		PRIMARY_KEY++;
+		Iterator<Entry<String, String>> it = m.entrySet().iterator();
+		// setting all the attributes of the user.
+		while (it.hasNext()) {
+			Map.Entry<String, String> pair = (Entry<String, String>) it.next();
+			new_user.setProperty(pair.getKey(), pair.getValue());
+		}
+		return new_user;
+	}
+
+}
+
+class Content {
+}
+
+class Trails {
+}
+
+class TrailItems {
+}
+
+class Comments {
+}
+
+class Analytics {
+}
+
+class Questions {
+}
+
+class AnswerOptions {
+}
+
+class Assessments {
+}
+
+class AssessmentQuestions {
+}
+
+class AssessmentSubmissions {
+}
+
+class AuditLogs {
+}
+
+class OneTimeAuth {
+}
+
+class Roles {
+}
+
+class SubmissionResponses {
+}
+
+class Subscriptions {
+}
+
+class TrailAssessments {
+}
+
+class UserRoles {
+}

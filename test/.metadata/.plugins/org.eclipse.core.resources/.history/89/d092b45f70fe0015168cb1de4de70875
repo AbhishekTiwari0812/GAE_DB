@@ -1,0 +1,14 @@
+package com.abhishek.test1;
+
+import com.google.appengine.api.datastore.DatastoreService;
+import com.google.appengine.api.datastore.DatastoreServiceFactory;
+import com.google.appengine.api.datastore.Entity;
+
+public class DAL {
+	DatastoreService ds;
+	DAL(){
+		ds = DatastoreServiceFactory.getDatastoreService();
+	}
+	void insert_user(Entity user){
+	}
+}

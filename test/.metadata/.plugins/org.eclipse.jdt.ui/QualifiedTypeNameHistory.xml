@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.google.appengine.api.datastore.DatastoreService"/>
+<fullyQualifiedTypeName name="com.google.appengine.api.datastore.DatastoreServiceFactory"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="java.util.Map.Entry"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.sql.Time"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="com.google.appengine.api.datastore.Entity"/>
+<fullyQualifiedTypeName name="org.mortbay.log.Log"/>
+<fullyQualifiedTypeName name="com.google.appengine.api.datastore.Key"/>
+<fullyQualifiedTypeName name="com.google.appengine.api.datastore.KeyFactory"/>
+<fullyQualifiedTypeName name="com.google.appengine.api.search.query.QueryTreeContext.Kind"/>
+<fullyQualifiedTypeName name="com.google.appengine.api.datastore.FetchOptions"/>
+<fullyQualifiedTypeName name="com.google.appengine.api.datastore.FetchOptions.Builder"/>
+<fullyQualifiedTypeName name="com.google.appengine.api.datastore.Query"/>
+<fullyQualifiedTypeName name="com.google.appengine.api.datastore.Query.FilterOperator"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,62 @@
+package com.abhishek.test1;
+
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+import com.google.appengine.api.datastore.DatastoreService;
+import com.google.appengine.api.datastore.DatastoreServiceFactory;
+import com.google.appengine.api.datastore.Entity;
+
+public class DAL {
+	DatastoreService ds;
+
+	DAL() {
+		ds = DatastoreServiceFactory.getDatastoreService();
+	}
+
+	/*
+	 * @param e is the reference to new entity created. m is the
+	 * (property,value) pair for that entity.
+	 */
+	static Entity setProperty(Entity e, Map<String, Object> m) {
+		Iterator<Entry<String, Object>> it = m.entrySet().iterator();
+		// setting all the attributes of the entity.
+		while (it.hasNext()) {
+			Map.Entry<String, Object> pair = (Entry<String, Object>) it.next();
+			e.setProperty(pair.getKey(), "" + pair.getValue());
+		}
+		return e;
+	}
+
+	/*
+	 * Insert statements
+	 * 
+	 * @param Entity : the entity to be inserted
+	 * 
+	 * @return :true if successful, false on failure
+	 */
+	boolean insert_entity(Entity e) {
+		boolean isDuplicate = false;
+		// TODO: check for duplicates.
+		if (isDuplicate) { // insert if entity not a duplicate
+			ds.put(e);
+		} else {
+			// TODO: print log for duplicates
+			p("Duplicate entity");
+		}
+
+		return !isDuplicate;
+	}
+
+	Entity search_query(String key, String value) {
+		// TODO: implement the search query here.
+		// returns null if no entity exists with the name mentioned
+		return null;
+	}
+	// used for printing errors.
+	private void p(String string) {
+		System.out.println("" + string);
+
+	}
+
+}

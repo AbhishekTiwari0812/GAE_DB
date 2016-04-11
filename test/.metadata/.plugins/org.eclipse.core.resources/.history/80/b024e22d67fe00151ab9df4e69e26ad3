@@ -1,0 +1,20 @@
+package com.abhishek.test1;
+
+import com.google.appengine.api.datastore.DatastoreService;
+import com.google.appengine.api.datastore.DatastoreServiceFactory;
+import com.google.appengine.api.datastore.Entity;
+
+public class Entity1 {
+
+	DatastoreService ds = DatastoreServiceFactory.getDatastoreService();
+
+	
+	void insert() {
+		// creating entity without identifier.
+		Entity a = new Entity("Person");
+		// a.setPropertiesFrom(src);
+		a.setProperty("Name", "Abhishek");
+		// putting the entity in the data-store to make it persistent.
+		ds.put(a);
+	}
+}

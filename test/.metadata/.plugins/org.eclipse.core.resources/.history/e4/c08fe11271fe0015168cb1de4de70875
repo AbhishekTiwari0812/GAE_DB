@@ -1,0 +1,47 @@
+package com.abhishek.test1;
+
+import java.sql.Time;
+
+import com.google.appengine.api.datastore.Entity;
+
+public class Users {
+	static long PRIMARY_KEY=1;
+  	int user_id;	//primary key
+  	String email;
+  	String login;
+  	String passwd;
+  	String first_name;
+  	String last_name;
+  	String middle_name;
+  	char gender;
+  	Time upd_ts;
+  	String photo_path;
+  	boolean is_external;
+ 	Time last_login; 
+  	short failed_logins;
+  	boolean verified;
+  	Entity create_user_entity(){
+  		Entity new_user=new Entity("User",PRIMARY_KEY);
+  		PRIMARY_KEY++;
+  		return new_user;
+  	}
+
+}
+
+class Content{}
+class Trails{}
+class TrailItems{}
+class Comments{}
+class Analytics{}
+class Questions{}
+class AnswerOptions{}
+class Assessments{}
+class AssessmentQuestions{}
+class AssessmentSubmissions{}
+class AuditLogs{}
+class OneTimeAuth{}
+class Roles{}
+class SubmissionResponses{}
+class Subscriptions{}
+class TrailAssessments{}
+class UserRoles{}

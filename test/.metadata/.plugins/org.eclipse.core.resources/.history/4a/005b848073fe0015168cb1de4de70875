@@ -1,0 +1,57 @@
+package com.abhishek.test1;
+
+import com.google.appengine.api.datastore.DatastoreService;
+import com.google.appengine.api.datastore.DatastoreServiceFactory;
+import com.google.appengine.api.datastore.Entity;
+
+public class DAL {
+	DatastoreService ds;
+	DAL(){
+		ds = DatastoreServiceFactory.getDatastoreService();
+	}
+	void insert_user(Entity user){
+		//TODO: check for constraints put on user entity.
+		ds.put(user);
+	}
+	void insert_content(Entity content){
+		//TODO: check for constraints put on content entity.
+		ds.put(content);
+	}
+	void insert_trail(Entity trail){
+		//TODO: check for constraints put on trail entity.
+		ds.put(trail);
+	}
+	void insert_trailItems(Entity trail_item){
+		//TODO: check for constraints put on trail item entity.
+		ds.put(trail_item);
+	}
+	void insert_comment(Entity comment){
+		//TODO: check for constraints put on comment entity.
+		ds.put(comment);
+	}
+	void insert_analytics(Entity analytics){
+		//TODO: check for constraints put on analytics entity.
+		ds.put(analytics);
+	}
+	void insert_question(Entity question){
+		//TODO: check for constraints put on questions entity.
+		ds.put(question);
+	}
+	void insert_user(Entity user){
+		//TODO: check for constraints put on user entity.
+		ds.put(user);
+	}
+	void insert_user(Entity user){
+		//TODO: check for constraints put on user entity.
+		ds.put(user);
+	}
+	void insert_user(Entity user){
+		//TODO: check for constraints put on user entity.
+		ds.put(user);
+	}
+	void insert_user(Entity user){
+		//TODO: check for constraints put on user entity.
+		ds.put(user);
+	}
+	
+}
