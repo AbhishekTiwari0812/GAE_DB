@@ -1,3 +1,5 @@
+Made for learning about GAE-datastore.
+In this project, the given MySQL script is translated to equivalent GAE datastore code.
 =====================================================README=======================================================================
 
 Before we start transporting the script from MySQL to GAE datastore script, we need to set up the environment.
@@ -17,7 +19,7 @@ Class DAL is the data access layer. In this class all the queries have been impl
 All the default classes Public class ClassObjects are similar to the table user in the provided script. (Attribute data type for some of the columns in the script are not same though)
 
 
-Parts finished and working:-
+Parts finished and working::-
 All the insert statements are complete.
 
 getMapper() has been implemented for User and OneTimeAuth.
